@@ -8,7 +8,45 @@
   <title>Shopping List</title>
 </head>
 <body>
-  
+
+  <div id="container">
+
+  <h1>Shopping List</h1>
+
+  <fieldset>
+    <legend>Add Items</legend>
+    <input type="text" placeholder="type item" id="item" required>
+    <input type="number" placeholder="Qty" id="quantity" required>
+    <button id="btn-add">Add</button>
+  </fieldset>
+
+  <fieldset>
+    <legend>Shopping List</legend>
+    <table id="shoppingList-table">
+      <tr>
+        <th>Item</th>
+        <th>Quatity</th>
+      </tr>
+      <tr>
+        <td>Apples</td>
+        <td>4</td>
+        <td><button class="btn-remove">Remove</button></td>
+      </tr>
+      <tr>
+        <td>Bananas</td>
+        <td>2</td>
+        <td><button class="btn-remove">Remove</button></td>
+      </tr>
+      <tr>
+        <td>Broccoli</td>
+        <td>1</td>
+        <td><button class="btn-remove">Remove</button></td>
+      </tr>
+    </table>
+  </fieldset>
+
+  </div>
+
   
   <script src="shopping.js"></script>
 </body>
