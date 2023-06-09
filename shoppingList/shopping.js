@@ -83,5 +83,5 @@ function removeEvent(btnRemove) {btnRemove.addEventListener('click', function() 
 
 // Function to clear the input fields. This is so we can call the function within the AddEvent for Add items once the item has been added
 function clearField(field) {
-  field.reset();
+  field.value = '';
 }
