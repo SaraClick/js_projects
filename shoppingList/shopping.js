@@ -11,19 +11,13 @@ let tableBody = document.querySelector('tbody');
 // console.log(btnAdd);
 // console.log(listTable);
 
-// Array to contain all elements in the Shopping List
-let shoppingList = [{item: 'Apples', quantity: 4}, {item: 'Bananas', quantity: 2}, {item: 'Broccoli', quantity: 1}];
 
-
+// EVENT LISTENER FOR ADD BUTTON
 btnAdd.addEventListener('click', function() {
 
   // Get into from input
   const itemNew = itemAdd.value;  // get input value
   const qtyNew = qtyAdd.value;  // get input value
-
-  shoppingList.push({item: itemNew, quantity: qtyNew});
-
-  // ADD TABLE ROWS TO SHOPPING LIST WHEN CLICKING ADD
 
   // The commented out block renders an additional line but doesn't create the elements hence we have no new nodes created
  /*const newRow = listTable.insertRow(-1);  // create new empty row at the end of the table
@@ -45,11 +39,11 @@ btnAdd.addEventListener('click', function() {
   const tdBtn = document.createElement('button');
 
   // Create the <tr> element by nesting the elements 
-  tdRemove.append(tdBtn)
-  tr.append(tdItem)
-  tr.append(tdQty)
-  tr.append(tdRemove)
-  tbody.append(tr)
+  tdRemove.append(tdBtn);
+  tr.append(tdItem);
+  tr.append(tdQty);
+  tr.append(tdRemove);
+  tbody.append(tr);
 
   // Add the class names to the elements created
   tdItem.setAttribute('class', 'item');
@@ -57,9 +51,9 @@ btnAdd.addEventListener('click', function() {
   tdBtn.setAttribute('class', 'btn-remove');
 
   // Add the text to the elements created
-  tdItem.innerText = itemNew
-  tdQty.innerText = qtyNew
-  tdBtn.innerHTML = 'Remove';
+  tdItem.innerText = itemNew;
+  tdQty.innerText = qtyNew;
+  tdBtn.innerHTML = '<i class="fa fa-minus" aria-hidden="true"></i>';
 
   // console.log(document.querySelectorAll('.btn-remove'));
   // console.log(tableBody);

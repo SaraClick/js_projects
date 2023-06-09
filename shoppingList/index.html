@@ -5,6 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <!-- Font awesome CND for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Shopping List</title>
 </head>
 <body>
@@ -15,39 +19,29 @@
 
   <fieldset>
     <legend>Add Items</legend>
+    <div class="container-fieldset">
     <input type="text" placeholder="type item" id="item" required>
-    <input type="number" placeholder="Qty" id="quantity" required>
-    <button id="btn-add">Add</button>
+    <input type="number" placeholder="Qty" id="quantity" min="1" required>
+    <button id="btn-add"><i id="add" class="fa fa-plus" aria-hidden="true"></i></button>
+    </div>
   </fieldset>
 
   <fieldset>
     <legend>Shopping List</legend>
+    <div class="container-fieldset">
     <table id="shoppingList-table">
       <thead>
         <tr>
-          <th>Item</th>
+          <th>Item name</th>
           <th>Quatity</th>
           <th>Remove</th>
         </tr>
       </thead>
       <tbody>
-        <!-- <tr>
-          <td class="item">Apples</td>
-          <td class="quantity">4</td>
-          <td><button class="btn-remove">Remove</button></td>
-        </tr>
-        <tr>
-          <td class="item">Bananas</td>
-          <td class="quantity">2</td>
-          <td><button class="btn-remove">Remove</button></td>
-        </tr>
-        <tr>
-          <td class="item">Broccoli</td>
-          <td class="quantity">1</td>
-          <td><button class="btn-remove">Remove</button></td>
-        </tr> -->
+        <!-- td added by user inputs -->
       </tbody>
     </table>
+    </div>
   </fieldset>
 
   </div>
