@@ -32,12 +32,12 @@ legend {
   padding-left: 10px;
 }
 
-table {
+/* table {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 15px;
-}
+} */
 
 #quantity {
   width: 50px;
