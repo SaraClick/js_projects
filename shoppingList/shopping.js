@@ -53,7 +53,7 @@ btnAdd.addEventListener('click', function() {
   // Add the text to the elements created
   tdItem.innerText = itemNew;
   tdQty.innerText = qtyNew;
-  tdBtn.innerHTML = '<i class="fa fa-minus" aria-hidden="true"></i>';
+  tdBtn.innerHTML = '<img src="icons\\remove.png" id="img-remove">';
 
   // console.log(document.querySelectorAll('.btn-remove'));
   // console.log(tableBody);

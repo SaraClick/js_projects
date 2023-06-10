@@ -14,12 +14,12 @@ body {
   align-items: center;
   height: 100vh;
   text-align: center;
-  background-color: #5D707F;
+  background-color:#D8DAD3;
 }
 
 h1 {
   padding-bottom: 10px;
-  color: #D8DAD3;
+  color: #4d6219;
 }
 
 fieldset {
@@ -68,6 +68,14 @@ td {
   background-color: #8ab98c;
 }
 
-.btn-remove {
-  background-color: #92374D;
+
+#img-add, #img-remove {
+  background-color: none;
+  border: none;
+  height: 1rem;
+}
+
+#btn-add, .btn-remove{
+  background-color: inherit;
+  border: none;
 }
