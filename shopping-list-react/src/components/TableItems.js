@@ -1,8 +1,8 @@
 import React from "react";
 
-const TableItems = () => {
+const TableItems = (listItems) => {
   return (
-    <table class="table">
+    <table className="table">
       <thead>
         <tr>
           <th scope="col">Item</th>
@@ -10,7 +10,17 @@ const TableItems = () => {
           <th scope="col"></th>
         </tr>
       </thead>
-      <tbody>{/* TODO */}</tbody>
+      <tbody>
+        <tr>
+          <td>itemName</td>
+          <td>itemQty</td>
+          <td>
+            <button type="button" className="btn btn-danger">
+              Remove
+            </button>
+          </td>
+        </tr>
+      </tbody>
     </table>
   );
 };

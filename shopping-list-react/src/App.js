@@ -1,8 +1,13 @@
 import DataInput from "./components/DataInput";
-import Button from "./components/Button";
 import TableItems from "./components/TableItems";
 
 function App() {
+  let shoppingList = [
+    { item: "Apples", qty: 4 },
+    { item: "Banana", qty: 6 },
+    { item: "Eggs", qty: 6 },
+  ];
+
   return (
     <div className="container">
       <div className="card main-card">
@@ -10,7 +15,6 @@ function App() {
           <div className="card-title">React Shopping List</div>
           <div className="card-text">
             <DataInput />
-            <Button className="btn-success" id="add" />
           </div>
           <div className="card-text">
             <TableItems />
