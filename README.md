@@ -8,6 +8,7 @@ Repository containing projects built during my journey of learning JavaScript, D
 
 - [💰 Tip Calculator](#-tip-calculator)
 - [📝 Shopping List](#-shopping-list)
+- [❌ Tic Tac Toe](#-tic-tac-toe)
 
 ---
 
@@ -35,6 +36,14 @@ App for users to create their shopping list of items and quantities where the us
 - Remove items from the shopping list by clicking the remove button
 
 💻 Tech study focus: HTML | CSS | JavaScript | DOM
+
+---
+
+### ❌ Tic Tac Toe
+
+Project tutorial from [React.dev](https://react.dev/learn/tutorial-tic-tac-toe) built following the instructions to learn along.
+
+💻 Tech study focus: JavaScript | React
 
 ---
 
