@@ -1,6 +1,7 @@
 import React from "react";
+import { useState } from "react";
 
-const TableItems = (listItems) => {
+export default function TableItems(listItems) {
   return (
     <table className="table">
       <thead>
@@ -13,7 +14,7 @@ const TableItems = (listItems) => {
       <tbody>
         <tr>
           <td>itemName</td>
-          <td>itemQty</td>
+          <td>Qty</td>
           <td>
             <button type="button" className="btn btn-danger">
               Remove
@@ -23,6 +24,4 @@ const TableItems = (listItems) => {
       </tbody>
     </table>
   );
-};
-
-export default TableItems;
+}
